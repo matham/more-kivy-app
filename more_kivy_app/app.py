@@ -145,7 +145,7 @@ class MoreKivyApp(App):
     app for all the configurable classes. See that module for details.
 
     The keys in the dict are configuration names for a class and its
-    values are property values or nested dicts whose keys are class attributes 
+    values are property values or nested dicts whose keys are class attributes
     names and values are their values. These attributes are the ones listed in
     ``_config_props_``. See :mod:`tree-config` for how configuration works.
     '''
