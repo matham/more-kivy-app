@@ -20,7 +20,6 @@ if not os.environ.get('KIVY_DOC_INCLUDE', None):
     Config.set('kivy', 'exit_on_escape', 0)
 
 from kivy import resources
-from kivy.modules import inspector
 from kivy.resources import resource_add_path
 from kivy.base import ExceptionManager, ExceptionHandler
 from kivy.app import App
@@ -233,6 +232,7 @@ class MoreKivyApp(App):
         """
         if root is not None and self.inspect:
             from kivy.core.window import Window
+            from kivy.modules import inspector
             inspector.create_inspector(Window, root)
         return root
 
@@ -305,6 +305,7 @@ class MoreKivyApp(App):
         """
         if self.inspect and self.root:
             from kivy.core.window import Window
+            from kivy.modules import inspector
             inspector.stop(Window, self.root)
 
 
