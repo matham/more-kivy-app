@@ -25,6 +25,7 @@ from kivy.base import ExceptionManager, ExceptionHandler
 from kivy.app import App
 from kivy.logger import Logger
 from kivy.clock import Clock
+import kivy
 
 
 __all__ = ('MoreKivyApp', 'run_app', 'run_app_async', 'app_error',
@@ -199,7 +200,11 @@ class MoreKivyApp(App):
 
         if hasattr(sys, '_MEIPASS'):
             return os.path.abspath(os.path.dirname(sys.executable))
-        return join(dirname(inspect.getfile(self.__class__)), 'data')
+
+        p = join(dirname(inspect.getfile(self.__class__)), 'data')
+        if isdir(p):
+            return p
+        return kivy.user_home_dir
 
     def load_app_settings_from_file(self):
         """Reads the config from the :attr:`yaml_config_path` file and saves
