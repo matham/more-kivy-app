@@ -10,7 +10,7 @@ import traceback
 import sys
 import logging
 from functools import wraps
-from os.path import dirname, join, isdir
+from os.path import dirname, join, isdir, expanduser
 from more_kivy_app.config import apply_config, read_config_from_file, \
     read_config_from_object, dump_config
 
@@ -25,7 +25,6 @@ from kivy.base import ExceptionManager, ExceptionHandler
 from kivy.app import App
 from kivy.logger import Logger
 from kivy.clock import Clock
-import kivy
 
 
 __all__ = ('MoreKivyApp', 'run_app', 'run_app_async', 'app_error',
@@ -204,7 +203,7 @@ class MoreKivyApp(App):
         p = join(dirname(inspect.getfile(self.__class__)), 'data')
         if isdir(p):
             return p
-        return kivy.user_home_dir
+        return expanduser('~')
 
     def load_app_settings_from_file(self):
         """Reads the config from the :attr:`yaml_config_path` file and saves
