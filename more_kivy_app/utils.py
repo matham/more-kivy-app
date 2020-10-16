@@ -5,6 +5,7 @@ from kivy.properties import ObservableDict, ObservableList, Property
 from functools import partial
 from tree_config.utils import yaml_loads as orig_yaml_loads,\
     get_yaml as orig_get_yaml, yaml_dumps as orig_yaml_dumps
+from pathlib import Path
 
 __all__ = ('get_yaml', 'yaml_dumps', 'yaml_loads')
 
@@ -17,10 +18,14 @@ def get_yaml():
     yaml = orig_get_yaml()
     yaml.default_flow_style = False
 
+    def represent_str(yml, val):
+        return yaml.representer.__class__.represent_str(yml, str(val))
+
     yaml.representer.add_multi_representer(
         ObservableList, yaml.representer.__class__.represent_list)
     yaml.representer.add_multi_representer(
         ObservableDict, yaml.representer.__class__.represent_dict)
+    yaml.representer.add_multi_representer(Path, represent_str)
 
     yaml.representer.add_multi_representer(Property, represent_property)
     return yaml
