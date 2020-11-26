@@ -156,7 +156,10 @@ class MoreKivyApp(App):
 
     _data_path = ''
 
-    def __init__(self, **kw):
+    def __init__(self, yaml_config_path=None, **kw):
+        if yaml_config_path is not None:
+            self.yaml_config_path = yaml_config_path
+
         if self.yaml_config_path is None:
             self.yaml_config_path = '{}_config.yaml'.format(
                 self.__class__.__name__)
