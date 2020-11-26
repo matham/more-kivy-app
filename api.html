@@ -1,0 +1,491 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API &mdash; MoreKivyApp  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Getting Started" href="getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> MoreKivyApp
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#more-kivy-app">more-kivy-app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#app">App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#utilities">Utilities</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MoreKivyApp</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api">
+<span id="id1"></span><h1>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-more_kivy_app"></span><div class="section" id="more-kivy-app">
+<h2>more-kivy-app<a class="headerlink" href="#more-kivy-app" title="Permalink to this headline">¶</a></h2>
+<p>Base class for kivy apps that is crash resistant with builtin configuration.</p>
+</div>
+<span class="target" id="module-more_kivy_app.app"></span><div class="section" id="app">
+<h2>App<a class="headerlink" href="#app" title="Permalink to this headline">¶</a></h2>
+<p>The base App class.</p>
+<dl class="py class">
+<dt id="more_kivy_app.app.MoreKivyApp">
+<em class="property">class </em><code class="sig-prename descclassname">more_kivy_app.app.</code><code class="sig-name descname">MoreKivyApp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">yaml_config_path</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kw</span></em><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://kivy.org/doc/stable/api-kivy.app.html#kivy.app.App" title="(in Kivy v1.11.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">kivy.app.App</span></code></a></p>
+<p>The base app.</p>
+<dl class="py attribute">
+<dt id="more_kivy_app.app.MoreKivyApp.app_settings">
+<code class="sig-name descname">app_settings</code><em class="property"> = {}</em><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp.app_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dict that contains the <code class="xref py py-mod docutils literal notranslate"><span class="pre">tree-config</span></code> settings for the
+app for all the configurable classes. See that module for details.</p>
+<p>The keys in the dict are configuration names for a class and its
+values are property values or nested dicts whose keys are class attributes
+names and values are their values. These attributes are the ones listed in
+<code class="docutils literal notranslate"><span class="pre">_config_props_</span></code>. See <code class="xref py py-mod docutils literal notranslate"><span class="pre">tree-config</span></code> for how configuration works.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="more_kivy_app.app.MoreKivyApp.apply_app_settings">
+<code class="sig-name descname">apply_app_settings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp.apply_app_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Applies the app config stored in <a class="reference internal" href="#more_kivy_app.app.MoreKivyApp.app_settings" title="more_kivy_app.app.MoreKivyApp.app_settings"><code class="xref py py-attr docutils literal notranslate"><span class="pre">app_settings</span></code></a> to the
+application instance. See <a class="reference external" href="https://matham.github.io/tree-config/api.html#tree_config.apply_config" title="(in tree-config)"><code class="xref py py-func docutils literal notranslate"><span class="pre">tree_config.apply_config()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="more_kivy_app.app.MoreKivyApp.ask_cannot_close">
+<code class="sig-name descname">ask_cannot_close</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">largs</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp.ask_cannot_close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called by kivy when the user tries to close the app. It only closes
+if this returns False.</p>
+<p>This is only used when the app is started with <a class="reference internal" href="#more_kivy_app.app.run_app" title="more_kivy_app.app.run_app"><code class="xref py py-func docutils literal notranslate"><span class="pre">run_app()</span></code></a> or
+<a class="reference internal" href="#more_kivy_app.app.run_app_async" title="more_kivy_app.app.run_app_async"><code class="xref py py-func docutils literal notranslate"><span class="pre">run_app_async()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="more_kivy_app.app.MoreKivyApp.build">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">root</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp.build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Similar to App’s build, but it takes the root widget if provided
+and if <a class="reference internal" href="#more_kivy_app.app.MoreKivyApp.inspect" title="more_kivy_app.app.MoreKivyApp.inspect"><code class="xref py py-attr docutils literal notranslate"><span class="pre">inspect</span></code></a> is True, it activates kivy’s inspector.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>root</strong> – The root widget instance.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The root widget</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="more_kivy_app.app.MoreKivyApp.clean_up">
+<code class="sig-name descname">clean_up</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp.clean_up" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called by <a class="reference internal" href="#more_kivy_app.app.run_app" title="more_kivy_app.app.run_app"><code class="xref py py-func docutils literal notranslate"><span class="pre">run_app()</span></code></a> or <a class="reference internal" href="#more_kivy_app.app.run_app_async" title="more_kivy_app.app.run_app_async"><code class="xref py py-func docutils literal notranslate"><span class="pre">run_app_async()</span></code></a> after the app
+closes to clean up any remaining resources.</p>
+<p>By default, if <a class="reference internal" href="#more_kivy_app.app.MoreKivyApp.inspect" title="more_kivy_app.app.MoreKivyApp.inspect"><code class="xref py py-attr docutils literal notranslate"><span class="pre">inspect</span></code></a> is enabled, it cleans up after it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="more_kivy_app.app.MoreKivyApp.data_path">
+<em class="property">property </em><code class="sig-name descname">data_path</code><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp.data_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The install dependent path to the persistent config data directory.
+It is automatically added to the kivy resource PATH.</p>
+<p>if this is running under a PyInstaller installation, it is the path
+that contains the executable, it’s the data folder next to the app
+class’s python file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="more_kivy_app.app.MoreKivyApp.dump_app_settings_to_file">
+<code class="sig-name descname">dump_app_settings_to_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp.dump_app_settings_to_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the app config from the app to the config file at
+<a class="reference internal" href="#more_kivy_app.app.MoreKivyApp.yaml_config_path" title="more_kivy_app.app.MoreKivyApp.yaml_config_path"><code class="xref py py-attr docutils literal notranslate"><span class="pre">yaml_config_path</span></code></a>. See <code class="xref py py-func docutils literal notranslate"><span class="pre">tree_config.dump_config()</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="more_kivy_app.app.MoreKivyApp.ensure_file">
+<code class="sig-name descname">ensure_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp.ensure_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the full path to <code class="docutils literal notranslate"><span class="pre">filename</span></code> by searching for it in kivy’s
+resource directories if it exists. Otherwise, it create the empty file
+and returns the path to it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="more_kivy_app.app.MoreKivyApp.get_logger">
+<code class="sig-name descname">get_logger</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp.get_logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the logger to use in <a class="reference internal" href="#more_kivy_app.app.MoreKivyApp.handle_exception" title="more_kivy_app.app.MoreKivyApp.handle_exception"><code class="xref py py-meth docutils literal notranslate"><span class="pre">handle_exception()</span></code></a> to log
+messages.</p>
+<p>Defaults to returning the Kivy Logger.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="more_kivy_app.app.MoreKivyApp.handle_exception">
+<code class="sig-name descname">handle_exception</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">msg</span></em>, <em class="sig-param"><span class="n">exc_info</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">level</span><span class="o">=</span><span class="default_value">'error'</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">largs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp.handle_exception" title="Permalink to this definition">¶</a></dt>
+<dd><p>Should be called whenever an exception is caught in the app.</p>
+<p>If the app is started with <a class="reference internal" href="#more_kivy_app.app.run_app" title="more_kivy_app.app.run_app"><code class="xref py py-func docutils literal notranslate"><span class="pre">run_app()</span></code></a> or <a class="reference internal" href="#more_kivy_app.app.run_app_async" title="more_kivy_app.app.run_app_async"><code class="xref py py-func docutils literal notranslate"><span class="pre">run_app_async()</span></code></a>,
+this is called if kivy encounters an error. Similarly,
+<a class="reference internal" href="#more_kivy_app.app.app_error" title="more_kivy_app.app.app_error"><code class="xref py py-func docutils literal notranslate"><span class="pre">app_error()</span></code></a>, <a class="reference internal" href="#more_kivy_app.app.app_error_async" title="more_kivy_app.app.app_error_async"><code class="xref py py-func docutils literal notranslate"><span class="pre">app_error_async()</span></code></a>, and
+<a class="reference internal" href="#more_kivy_app.app.report_exception_in_app" title="more_kivy_app.app.report_exception_in_app"><code class="xref py py-func docutils literal notranslate"><span class="pre">report_exception_in_app()</span></code></a> call this on the app upon an exception.</p>
+<p>It logs the message to the logger using <a class="reference internal" href="#more_kivy_app.app.MoreKivyApp.get_logger" title="more_kivy_app.app.MoreKivyApp.get_logger"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_logger()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>exception</cite>: string or exception object</dt><dd><p>The caught exception (i.e. the <code class="docutils literal notranslate"><span class="pre">e</span></code> in
+<code class="docutils literal notranslate"><span class="pre">except</span> <span class="pre">Exception</span> <span class="pre">as</span> <span class="pre">e</span></code>)</p>
+</dd>
+<dt><cite>exc_info</cite>: stack trace</dt><dd><p>If not None, the return value of <code class="docutils literal notranslate"><span class="pre">sys.exc_info()</span></code> or a
+stringified version of it. It is used to log the stack trace.</p>
+</dd>
+<dt><cite>level</cite>: string</dt><dd><p>The log level to use on the message. Can be <code class="docutils literal notranslate"><span class="pre">'error'</span></code>,
+<code class="docutils literal notranslate"><span class="pre">'exception'</span></code> (with the same meaning), or any other python
+log level.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="more_kivy_app.app.MoreKivyApp.init_load">
+<code class="sig-name descname">init_load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp.init_load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates any config files and adds <a class="reference internal" href="#more_kivy_app.app.MoreKivyApp.data_path" title="more_kivy_app.app.MoreKivyApp.data_path"><code class="xref py py-attr docutils literal notranslate"><span class="pre">data_path</span></code></a> to the kivy
+resource PATH when the app is instantiated.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="more_kivy_app.app.MoreKivyApp.inspect">
+<code class="sig-name descname">inspect</code><em class="property"> = False</em><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp.inspect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables GUI inspection. If True, it is activated by hitting ctrl-e in
+the GUI.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="more_kivy_app.app.MoreKivyApp.load_app_settings_from_file">
+<code class="sig-name descname">load_app_settings_from_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp.load_app_settings_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the config from the <a class="reference internal" href="#more_kivy_app.app.MoreKivyApp.yaml_config_path" title="more_kivy_app.app.MoreKivyApp.yaml_config_path"><code class="xref py py-attr docutils literal notranslate"><span class="pre">yaml_config_path</span></code></a> file and saves
+it to <a class="reference internal" href="#more_kivy_app.app.MoreKivyApp.app_settings" title="more_kivy_app.app.MoreKivyApp.app_settings"><code class="xref py py-attr docutils literal notranslate"><span class="pre">app_settings</span></code></a>. See
+<a class="reference external" href="https://matham.github.io/tree-config/api.html#tree_config.read_config_from_file" title="(in tree-config)"><code class="xref py py-func docutils literal notranslate"><span class="pre">tree_config.read_config_from_file()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="more_kivy_app.app.MoreKivyApp.yaml_config_path">
+<code class="sig-name descname">yaml_config_path</code><em class="property"> = None</em><a class="headerlink" href="#more_kivy_app.app.MoreKivyApp.yaml_config_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full path to the config file used for the app.</p>
+<p>If it’s <cite>None</cite> when <code class="docutils literal notranslate"><span class="pre">__init__</span></code> of the base class is called, it is
+set to <code class="docutils literal notranslate"><span class="pre">ClassName_config.yaml</span></code>, where <code class="docutils literal notranslate"><span class="pre">ClassName</span></code> is the name of the
+App class.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="more_kivy_app.app.app_error">
+<code class="sig-prename descclassname">more_kivy_app.app.</code><code class="sig-name descname">app_error</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_error_func</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">threaded</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.app_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>A decorator which wraps the function in <cite>try…except</cite> and calls
+<a class="reference internal" href="#more_kivy_app.app.MoreKivyApp.handle_exception" title="more_kivy_app.app.MoreKivyApp.handle_exception"><code class="xref py py-meth docutils literal notranslate"><span class="pre">MoreKivyApp.handle_exception()</span></code></a> when a exception is raised.</p>
+<p>E.g.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@app_error</span>
+<span class="k">def</span> <span class="nf">do_something</span><span class="p">():</span>
+    <span class="n">do_something</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="more_kivy_app.app.app_error_async">
+<code class="sig-prename descclassname">more_kivy_app.app.</code><code class="sig-name descname">app_error_async</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_error_func</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">threaded</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.app_error_async" title="Permalink to this definition">¶</a></dt>
+<dd><p>A decorator which wraps the async function in <cite>try…except</cite> and calls
+<a class="reference internal" href="#more_kivy_app.app.MoreKivyApp.handle_exception" title="more_kivy_app.app.MoreKivyApp.handle_exception"><code class="xref py py-meth docutils literal notranslate"><span class="pre">MoreKivyApp.handle_exception()</span></code></a> when a exception is raised.</p>
+<p>E.g.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@app_error</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">do_something</span><span class="p">():</span>
+    <span class="n">do_something</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="more_kivy_app.app.report_exception_in_app">
+<code class="sig-prename descclassname">more_kivy_app.app.</code><code class="sig-name descname">report_exception_in_app</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">e</span></em>, <em class="sig-param"><span class="n">exc_info</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">threaded</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.report_exception_in_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the error and reports it to <a class="reference internal" href="#more_kivy_app.app.MoreKivyApp.handle_exception" title="more_kivy_app.app.MoreKivyApp.handle_exception"><code class="xref py py-meth docutils literal notranslate"><span class="pre">MoreKivyApp.handle_exception()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>e</strong> – The error</p></li>
+<li><p><strong>exc_info</strong> – If not None, the return value of <code class="docutils literal notranslate"><span class="pre">sys.exc_info()</span></code> or
+a stringified version of it.</p></li>
+<li><p><strong>threaded</strong> – If the app should be called in a thread safe manner,
+e.g. if called from another thread.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="more_kivy_app.app.run_app">
+<code class="sig-prename descclassname">more_kivy_app.app.</code><code class="sig-name descname">run_app</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cls_or_app</span></em><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.run_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>Entrance method used to start the App. It runs, or instantiates and runs
+a <a class="reference internal" href="#more_kivy_app.app.MoreKivyApp" title="more_kivy_app.app.MoreKivyApp"><code class="xref py py-class docutils literal notranslate"><span class="pre">MoreKivyApp</span></code></a> type instance.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="more_kivy_app.app.run_app_async">
+<em class="property">async </em><code class="sig-prename descclassname">more_kivy_app.app.</code><code class="sig-name descname">run_app_async</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cls_or_app</span></em><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.app.run_app_async" title="Permalink to this definition">¶</a></dt>
+<dd><p>Entrance method used to start the App. It runs, or instantiates and runs
+a <a class="reference internal" href="#more_kivy_app.app.MoreKivyApp" title="more_kivy_app.app.MoreKivyApp"><code class="xref py py-class docutils literal notranslate"><span class="pre">MoreKivyApp</span></code></a> type instance.</p>
+</dd></dl>
+
+</div>
+<span class="target" id="module-more_kivy_app.config"></span><div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>Exports kivy-aware version of the configuration functions.</p>
+<dl class="py function">
+<dt id="more_kivy_app.config.apply_config">
+<code class="sig-prename descclassname">more_kivy_app.config.</code><code class="sig-name descname">apply_config</code><span class="sig-paren">(</span><em class="sig-param">obj</em>, <em class="sig-param">config: dict</em>, <em class="sig-param">get_attr=&lt;built-in function getattr&gt;</em>, <em class="sig-param">set_attr=&lt;built-in function setattr&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.config.apply_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the config data read with <code class="xref py py-func docutils literal notranslate"><span class="pre">read_config_from_object()</span></code>
+or <a class="reference internal" href="#more_kivy_app.config.read_config_from_file" title="more_kivy_app.config.read_config_from_file"><code class="xref py py-func docutils literal notranslate"><span class="pre">read_config_from_file()</span></code></a> and applies
+them to any existing class instances listed in classes.</p>
+<p>Calls <code class="xref py py-func docutils literal notranslate"><span class="pre">post_config_applied()</span></code> after object is configured.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="more_kivy_app.config.create_doc_listener">
+<code class="sig-prename descclassname">more_kivy_app.config.</code><code class="sig-name descname">create_doc_listener</code><span class="sig-paren">(</span><em class="sig-param">sphinx_app</em>, <em class="sig-param">package_name</em>, <em class="sig-param">filename</em>, <em class="sig-param">*</em>, <em class="sig-param">yaml_dump_str=functools.partial(&lt;function yaml_dumps&gt;</em>, <em class="sig-param">get_yaml_obj=&lt;function get_yaml&gt;)</em><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.config.create_doc_listener" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a listener for the <code class="docutils literal notranslate"><span class="pre">__config_props__</span></code> attributes and dumps
+the docs of any props listed to <code class="docutils literal notranslate"><span class="pre">filename</span></code>. If the file
+already exists, it extends it with new data and overwrites any exiting
+properties that we see again in this run.</p>
+<p>To use, in the sphinx conf.py file do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="n">app</span><span class="p">):</span>
+    <span class="kn">import</span> <span class="nn">package</span>
+    <span class="n">create_doc_listener</span><span class="p">(</span>
+        <span class="n">app</span><span class="p">,</span> <span class="n">package</span><span class="p">,</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+            <span class="s1">&#39;BASEKIVYAPP_CONFIG_DOC_PATH&#39;</span><span class="p">,</span> <span class="s1">&#39;config_attrs.yaml&#39;</span><span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">package</span></code> is the module for which the docs are generated.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="more_kivy_app.config.read_config_from_file">
+<code class="sig-prename descclassname">more_kivy_app.config.</code><code class="sig-name descname">read_config_from_file</code><span class="sig-paren">(</span><em class="sig-param">filename</em>, <em class="sig-param">yaml_load_str=&lt;function yaml_loads&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.config.read_config_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the config file and loads all the config data.</p>
+<p>The config data is returned as a dict. If there’s an error, an empty dict
+is returned.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="more_kivy_app.config.write_config_props_rst">
+<code class="sig-prename descclassname">more_kivy_app.config.</code><code class="sig-name descname">write_config_props_rst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#more_kivy_app.config.write_config_props_rst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Walks through all the configurable classes of this package
+(should be gotten from
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">get_config_classes()</span></code> or
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">get_config_instances()</span></code>) and loads the
+docs of those properties and generates a rst output file with all the
+tokens.</p>
+<p>For example in the sphinx conf.py file do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="n">app</span><span class="p">):</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;build-finished&#39;</span><span class="p">,</span> <span class="n">partial</span><span class="p">(</span><span class="n">write_config_props_rst</span><span class="p">,</span> <span class="n">ProjectApp</span><span class="o">.</span><span class="n">get_config_classes</span><span class="p">(),</span> <span class="n">project_name</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>where project_name is the project module and ProjectApp is the App of the
+package.</p>
+</dd></dl>
+
+</div>
+<span class="target" id="module-more_kivy_app.utils"></span><div class="section" id="utilities">
+<h2>Utilities<a class="headerlink" href="#utilities" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="getting_started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Matthew Einhorn
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
