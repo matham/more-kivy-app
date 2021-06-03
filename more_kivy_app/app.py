@@ -351,7 +351,7 @@ def run_app(cls_or_app):
     return app
 
 
-async def run_app_async(cls_or_app):
+async def run_app_async(cls_or_app, async_lib=None):
     """Entrance method used to start the App. It runs, or instantiates and runs
     a :class:`MoreKivyApp` type instance.
     """
@@ -362,7 +362,7 @@ async def run_app_async(cls_or_app):
     app = cls_or_app() if inspect.isclass(cls_or_app) else cls_or_app
     Window.fbind('on_request_close', app.ask_cannot_close)
     try:
-        await app.async_run()
+        await app.async_run(async_lib=async_lib)
     except Exception as e:
         app.handle_exception(e, exc_info=sys.exc_info())
 
