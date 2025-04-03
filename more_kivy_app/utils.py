@@ -3,7 +3,7 @@
 """
 from kivy.properties import ObservableDict, ObservableList, Property
 from functools import partial
-from tree_config.utils import yaml_loads as orig_yaml_loads,\
+from tree_config.utils import yaml_loads as orig_yaml_loads, \
     get_yaml as orig_get_yaml, yaml_dumps as orig_yaml_dumps
 from pathlib import Path
 
